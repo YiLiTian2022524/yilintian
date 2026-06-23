@@ -12,6 +12,8 @@
   <!-- 国内CDN备选 -->
   <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- 预加载首屏背景图 -->
+  <link rel="preload" href="images/hero-bg.jpg" as="image" fetchpriority="high">
 </head>
 <body>
 
@@ -103,7 +105,7 @@
     </div>
     <div class="about-grid">
       <div class="about-image reveal">
-        <img src="images/about-bg.jpg" alt="云南易林田经贸有限公司 - 公司环境">
+        <img src="images/about-bg.jpg" alt="云南易林田经贸有限公司 - 大国工程" fetchpriority="high">
       </div>
       <div class="about-content reveal">
         <h3>专注材料供应 · 服务大国工程</h3>
@@ -142,7 +144,7 @@
     <div class="business-grid">
 
       <div class="business-card reveal">
-        <img class="business-card-img" src="images/product-pipe.jpg" alt="钢管系列">
+        <img class="business-card-img" src="images/product-pipe.jpg" alt="钢管系列" loading="lazy">
         <div class="business-card-body">
           <h4>钢管系列</h4>
           <p>
@@ -155,7 +157,7 @@
       </div>
 
       <div class="business-card reveal">
-        <img class="business-card-img" src="images/product-steel.jpg" alt="钢板产品">
+        <img class="business-card-img" src="images/product-steel.jpg" alt="钢板产品" loading="lazy">
         <div class="business-card-body">
           <h4>钢板</h4>
           <p>
@@ -167,7 +169,7 @@
       </div>
 
       <div class="business-card reveal">
-        <img class="business-card-img" src="images/product-valve.jpg" alt="阀门管件法兰">
+        <img class="business-card-img" src="images/product-valve.jpg" alt="阀门管件法兰" loading="lazy">
         <div class="business-card-body">
           <h4>阀门 · 管件 · 法兰</h4>
           <p>
@@ -282,7 +284,7 @@
     <div class="news-grid">
 
       <article class="news-card reveal">
-        <img class="news-card-img" src="images/case-construction.jpg" alt="云南建投集团项目案例">
+        <img class="news-card-img" src="images/case-construction.jpg" alt="云南建投集团项目案例" loading="lazy">
         <div class="news-body">
           <div class="news-date">2022.05 — 至今</div>
           <h4>云南建投集团 · 管件阀门法兰材料供应</h4>
@@ -295,7 +297,7 @@
       </article>
 
       <article class="news-card reveal">
-        <img class="news-card-img" src="images/product-pipe.jpg" alt="中国中铁项目材料供应">
+        <img class="news-card-img" src="images/product-pipe.jpg" alt="中国中铁项目材料供应" loading="lazy">
         <div class="news-body">
           <div class="news-date">2025.05 — 2025.11</div>
           <h4>中国中铁（下属项目） · 综合材料配套</h4>
@@ -308,7 +310,7 @@
       </article>
 
       <article class="news-card reveal">
-        <img class="news-card-img" src="images/product-steel.jpg" alt="云南交投项目材料供应">
+        <img class="news-card-img" src="images/product-steel.jpg" alt="云南交投项目材料供应" loading="lazy">
         <div class="news-body">
           <div class="news-date">2023.12 — 至今</div>
           <h4>云南交投（下属项目） · 镀锌钢管供应</h4>
@@ -375,6 +377,17 @@
             <div class="contact-item-label">电子邮箱</div>
             <div class="contact-item-value">
               <a href="mailto:692352400@qq.com" style="color:var(--text-dark);text-decoration:none;">692352400@qq.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item" style="align-items:center;">
+          <div class="contact-item-icon">💬</div>
+          <div>
+            <div class="contact-item-label">微信咨询</div>
+            <div class="contact-item-value" style="display:flex;align-items:center;gap:12px;">
+              <span>扫码添加好友</span>
+              <img src="images/wechat-qr.jpg" alt="微信二维码" style="width:100px;height:100px;border-radius:8px;border:2px solid var(--border);cursor:pointer;" onclick="window.open(this.src,'_blank','width=400,height=400')">
             </div>
           </div>
         </div>
